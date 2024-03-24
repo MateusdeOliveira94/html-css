@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessae meu supositório público no <a href="http://gustavoguanabara.github.io/" target="_blank" rel="External">GitHub</a></p> <!-- a=âncora, href: hypertext reference, pra onde o site/link leva --> 
+    <p>Acesse também o <a href="http://youtube.com/cursoemvideo/" target="_blank" rel="External">canal gratuito no youtube</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar a <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!--A referencia de links externos é o proprio nome do arquivo, q deve estar na msm página-->
+    <p>Para acessar a página de notícias, <a href="noticias/noticias.html" rel="next" target="_self">clique aqui</a>.</p>
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar livro em PDF</a></li> <!--download:insere nome do arquivo,type p inserir o media type de acordo com o formato do arquivo (conferir pela lista iana.org/assignments/mediatype)-->
+        <li><a href="livro/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte.rar" type="application/zip">livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

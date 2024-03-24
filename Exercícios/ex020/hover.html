@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }       
+        
+        div > p {/*o simbolo > significa que é apenas o parágrafo que está dentro da div sofrerá a açao, o parágrafo filho/child da div*/
+            display: none; /*essa declaraçao significa q nao será mostrado o parágrafo q está dentro da div*/
+        }
+
+        div:hover > p { /*Aos passar o mouse sobre a div (pseudoclasse de estado hover), o parágrafo q está dentro dela será exibido*/
+            display: block;
+            color: beige;
+            background-color: brown;
+            width: 300px;
+            height: 100px;
+            
+        }
+        
+        div:hover { /*dois pontos significa q criou-se uma pseudo-classe de estado hover aplicada no elemento div*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Texto escondido!</p>
+    </div>
+    
+</body>
+</html>

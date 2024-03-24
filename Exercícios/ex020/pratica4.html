@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificadores</title>
+    <style>
+        div {
+            display: inline-block;  /* exibe uma div ao lado da outra, em linha */
+            height: 200px;
+            width: 200px;  
+            background-color: rgb(164, 164, 164);
+            border: 1px solid black; /*Shorthand property for setting border width, style, and color.*/
+
+        }
+        div#div01 {
+            background-color: brown;                     
+        }
+        #div02 { /* n é necessário sempre colocar o nome da tag, basta o ID */
+            background-color: rgb(42, 165, 79);                        
+        }
+        #div03, #div05 { /* podemos atribuir propriedades a mais de um elemento, separando por vírgula */
+            background-color: rgb(27, 27, 126);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificadorers em CSS</h1>
+    <p>Se quisermos identificar dando um nome especifico para cada um podemos usar os IDs. Em um mesmo documento, nao podemos ter dois elementos com o mesmo ID!</p>
+    <div id="div01"></div>
+    <div id="div02"></div>
+    <div id="div03"></div>
+    <div id="div04"></div>
+    <div id="div05"></div>
+    
+</body>
+</html>

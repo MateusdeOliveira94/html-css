@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        div:hover {
+            color:brown
+        }
+
+        div > p {/*apenas o p dentro da div sofrerá a açao abaixo*/
+            display: none; 
+        }
+
+        div:hover > p {/*a pseudoclasse hover será aplicado apenas no p dentro da div*/
+            display: block; /*será mostrado o block escondido anteriormente*/
+    
+            background-color: rgb(150, 137, 162);
+            width: 300px;
+            height: 200px;
+            color: rgb(255, 230, 132);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse o exemplo abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Texto escondido!</p>
+    </div>
+
+    
+</body>
+</html>

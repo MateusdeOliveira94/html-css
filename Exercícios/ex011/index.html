@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture> <!--Tag q indica a presença de uma imagem. Em seguida, usa-se a tag IMG p a imagem grande padrao, e em seguida, nas linhas superiores, c tag SOURCE: MEDIA: TYPE para adicionar as imagens adaptáveis c tamanhos reduzidos-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Significa que se o navegador tiver a largura máxima de 700px(o tamanho definido p a imagem média ) ele exibirá a imagem P no lugar--> 
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Significa que se o navegador tiver a largura máxima de 1000px(o tamanho definido p a imagem grande ) ele exibirá a imagem M no lugar. 50+ para ter uma sobra e evitar a barra de rolagem --> 
+        <img src="imagens/foto-g.png" alt="imagem flexível"> <!--Primeira linha criada. Indica que a imagem carregada por padrão será a G. -->
+
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop><!--metadata vai carregar só dados como nome do aquivo e duração-->
+        <source src="midia/ElBillete.mp3" type="audio/mpeg"><!--primeira tentativa -->
+        <source src="midia/ElBillete.ogg" type="audio/ogg"><!--segunda tentativa -->
+        <source src="midia/ElBillete.wav" type="audio/wav"><!--terceira tentativa -->
+        <p>infelizmente seu navegador nao conseguir reproduzir o audio. <a href="midia/ElBillete.mp3"> Clique aqui para baixar o arquivo MP3</a></p> <!--Opção mostrada caso nenhuma das anteriores tenham funcionado -->
+    </audio>
+</body>
+</html>

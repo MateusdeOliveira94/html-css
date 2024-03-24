@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif ;
+            background-color: rgb(186, 203, 203);
+            margin: 0px;
+        }
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(234, 232, 230);
+            padding: 10px;
+            margin: 10px; /*distancia caixa p borda da viewport/tela */
+        }
+        nav { /*configura a caixa*/
+            background-color: rgb(43, 43, 44);
+            padding: 5px;   
+                          
+        }
+        nav > a { /*configura o link dentro do menu*/
+            text-decoration: none;
+            color: rgb(228, 222, 222);
+            margin-right: 50px;
+        }
+        nav > a:hover { /*sublinha ao passar o mouse*/
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgb(234, 232, 230);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        article {
+            border: 1px solid rgb(30, 30, 30);
+            padding: 6px;          
+
+        }
+        article > aside {
+            text-align: right;
+            color: rgb(42, 42, 42);
+            font-weight: lighter;
+
+        }        
+        section#assuntos {
+            border: 1px solid rgb(35, 35, 35);
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color:rgb(45, 48, 48);
+            color: rgb(226, 226, 226);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p { 
+            font-size: 12px;
+            margin: 0px;
+        } /*declaraçao dedicado a tirar a margem que o navegador coloca por default nos parágrafos e dá a dimensão errada*/
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            margin:  15px auto;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho do site-->
+        <h1>Meu site</h1>
+        <nav> <!--Menu de navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--corpo principal do site-->
+        <section id="assuntos"> <!--Tag de agrupamento, dentro dela é necessário q o conteúdo esteja dentro de tags, como p e h1-->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quae aliquam error explicabo hic culpa sed. Quibusdam, alias? Recusandae dignissimos nihil ratione consequuntur, dolorum laboriosam in nemo deleniti eaque quae.</p>
+                <aside>
+                    Artigo escrito por Whitney Hilston.
+                </aside>
+            </article>
+        </section>       
+    </main>
+    <footer>
+        <p>Desenvolvido por Mateus</p>
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>

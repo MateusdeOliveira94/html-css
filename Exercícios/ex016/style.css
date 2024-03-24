@@ -1,0 +1,28 @@
+@charset "UFT-8"; /*cria-se REGRA para nao haver problemas com caracteres especiais */
+*{ /*asterisco cria configuraçoes globais da página q serao aplicadas em tudo*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to left, #D6C4BA, #BFAF9B);
+}
+main{
+    background-color: white;
+    border-radius: 8px; /*cria borda arredondada*/
+    box-shadow: 5px 5px 10px #94887a58; /*cria sombra. 1o parametro é afastamento lateral, 2o par é afastamento vertical.3o paramtro é espalhamento. 4o parametro é transparencia/cor */
+    width: 600px; /*medidas sao dadas em pixels, proporçoes e intensidades em percentagem*/
+    padding: 12px;
+    margin: auto; /*dá o afastamento do elemento em relaçao as laterais da página, sempre centralizando*/
+
+}
+h1{
+    color: #8C6472;
+    text-align: center;
+    text-shadow: 1px 1px 2px #3f2e3495;
+}
+h2{
+    color: #1C1C26;
+}
+p{
+    text-align: justify;
+}

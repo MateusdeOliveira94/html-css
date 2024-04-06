@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome {
+            background-color: rgb(216, 221, 226);
+        }
+        col.csexo {
+            background-color: rgb(231, 231, 231);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2"> <!--Expande para duas colunas-->           
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Rita</td>
+            <td>F</td>
+            <td>60</td>
+            <td>Artista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>62</td>
+            <td>Pintor</td>
+        </tr>
+        <tr>
+            <td>Celeste</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Detetive</td>
+        </tr>
+        <tr>
+            <td>Ronaldo</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Lurdes</td>
+            <td>F</td>
+            <td>55</td>
+            <td>vendedora</td>
+        </tr>
+        <tr>
+            <td>Bento</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Artesão</td>
+        </tr>
+
+    </table>
+</body>
+</html>

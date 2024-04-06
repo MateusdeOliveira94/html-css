@@ -12,7 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;  
-            margin: 24px;    
+            position: relative;    
         }
 
         caption {
@@ -27,18 +27,32 @@
             padding: 6px;
         }
 
-        thead{
+        th {
             background-color: rgb(94, 94, 94);
-            color: white;
+            color: white;            
         }
 
         tfoot {
-            background-color: rgb(228, 228, 228);
+            background-color: rgb(172, 172, 172);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(94, 94, 94);
         }
 
         td.num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd) /*odd ou 2n-1*/ { 
+            background-color: rgb(235, 235, 235);
+        }
+        TBODY > TR:nth-child(even) /*even ou 2n*/ {
+            background-color: rgb(231, 209, 209);
+        }
+
 
     </style>
 

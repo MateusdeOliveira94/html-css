@@ -11,7 +11,7 @@
 }
 
 html {
-    height: 100vh; /*tirou-se o height para eliminar barra rolagem*/
+    height: 100vh; /*tirou-se o width para eliminar barra rolagem*/
 }
 
 body {

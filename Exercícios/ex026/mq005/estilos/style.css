@@ -24,7 +24,7 @@ span#burguer {
     background-color: rgb(49, 49, 49);
     color: white;
     display: block;
-    padding: 6px;
+    padding: 4px;
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ menu > ul {
 
 menu > ul > li > a {
     display: block;
-    padding: 10px; 
+    padding: 6px; 
     text-decoration: none;
     text-align: center;
     background-color: rgb(109, 110, 110);

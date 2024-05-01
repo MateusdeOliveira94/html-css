@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="screenResizing()">
     <header>
         <h1>
             MH3D Renders
@@ -34,12 +35,21 @@
         </article>
     </main>
 
-    <script>
+    <script>   
+
         function clickMenu() {
            if (imenu.style.display == 'block') {
                 imenu.style.display = 'none'
             } else {
                 imenu.style.display = 'block'
+            }
+        }
+        
+        function screenResizing() {
+            if (window.innerWidth >= 768) {
+                imenu.style.display = 'block'                
+            } else {
+                (imenu.style.display = 'none')
             }
         }
     </script>

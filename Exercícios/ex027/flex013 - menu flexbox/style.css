@@ -16,13 +16,29 @@ body {
 
 header {
     background-color: rgb(48, 48, 48);
-    padding: 32px 20px 8px 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header > h1 {
     color: white;
     font-size: 1.5em;
-    margin-bottom: 18px;
+    border: 1px dotted gray;
+
+    flex: 0 0 200px;    
+}
+
+header > nav {
+    border: 1px dotted gray;
+     
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 header > nav > a {
@@ -30,13 +46,15 @@ header > nav > a {
     color: white;
     background-color: rgb(116, 116, 116);
     padding: 6px;
-    margin-right: -3px;
-    border-radius: 6px;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 header > nav > a:hover {
     background-color: rgb(139, 139, 139);
     text-decoration: underline;
+    transition: background-color .3s;
 }
 
 main {

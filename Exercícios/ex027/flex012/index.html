@@ -7,41 +7,47 @@
     <style>
         div.conteiner {
             background-color: bisque;
+
             display: flex;
             flex-flow: row nowrap;
-            height: 50px;
-            align-items: flex-start;
         }
 
         div.item {
             background-color: rgb(182, 216, 218);
             border: 1px solid black;
-            text-align: center;
-            flex-basis: 300px;                
+            text-align: center;                
         }
 
-        div#cx1 {
+        div#cxA {
+            /*flex-shrink: 0;
             flex-grow: 1;
-            flex-shrink: 1;
+            flex-basis: 200px;*/
+            flex: 1 0 200px;
+        }
 
+        div#cxB {
+            /*flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 100px;*/
+            flex: 1 1 100px;
         }
-        div#cx2 {
-            flex-grow: 0;
-            flex-shrink: 0;
-            
+
+        div#cxC {
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: 200px;*/
+            flex: 1 8 auto;
         }
-        div#cx3 {
-            flex-grow: 2;
-            flex-shrink: 2;
-            
-        }
+
+
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item" id="cx1">A</div>
-        <div class="item" id="cx2">B</div>
-        <div class="item" id="cx3">C</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        
     </div>
 </body>
 </html>

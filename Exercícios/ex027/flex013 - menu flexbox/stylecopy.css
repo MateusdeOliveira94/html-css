@@ -16,30 +16,42 @@ body {
 
 header {
     background-color: rgb(48, 48, 48);
-    padding: 10px;
+    padding: 8px;  
+    padding-top: 56px;
     
-
+    
+    /*Flex conteiner*/
     display: flex;
     flex-flow: row wrap ;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
 header > h1 {
     color: white;
-    font-size: 1.5em;
-    border: 1px dotted gray;
+    font-size: 1.5em;    
+    margin-bottom: 8px;
+    
+    
 
+    /*Flex item*/
     flex: 0 0 200px;    
 }
 
-header > nav {
-    border: 1px dotted gray;
+span#menu {
+    display: none;
+}
+
+header > nav {    
+    margin-bottom: 8px;
      
+    /*Flex conteiner*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    
+    
 }
 
 header > nav > a {
@@ -48,7 +60,7 @@ header > nav > a {
     color: white;
     background-color: rgb(116, 116, 116);
     padding: 6px;
-    margin: 6px;
+    margin: 2px;
     border-radius: 4px;
     text-align: center;
     

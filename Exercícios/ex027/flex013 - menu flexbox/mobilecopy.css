@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header{
+    padding-top: 32px;
+}
+
+header > h1 {
+    flex-basis: 40px;
+}
+
+span#menu {
+    display: flex;
+    color: rgb(224, 224, 224);
+    background-color: rgb(48, 48, 48);
+    padding: 4px;
+    text-align: center;
+}
+
+span#menu:hover {
+    cursor: pointer;
+    color: white;
+}
+ 
+header > nav {
+    display: none;
+}
+
+  
+header > nav > a {
+    width: 90vw;
+}
